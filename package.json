@@ -1,1 +1,23 @@
-{"name":"evergreen","private":true}
+{
+  "name": "evergreen",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "format": "prettier --write .",
+    "typecheck": "turbo typecheck",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.1.0",
+    "typescript": "^5.9.0",
+    "prettier": "^3.6.0"
+  }
+}
